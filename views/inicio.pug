@@ -1,0 +1,30 @@
+extends ./layout/index
+
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper nunc id tempus tristique. Phasellus scelerisque lacus velit, at varius magna elementum et. Praesent dictum consequat ipsum, at lobortis nulla blandit ut. Etiam et urna rutrum mauris hendrerit semper et in augue. In ultrices, nisl ac scelerisque viverra, ipsum libero euismod sem, eu pellentesque nisi mi sit amet libero.
+                p Maecenas et porttitor quam, ut hendrerit nisl. Phasellus mi velit, vehicula nec ante in, efficitur semper urna. Phasellus eleifend lectus in lacus mattis scelerisque. In erat lectus, viverra in facilisis eu, consectetur vitae augue. Nullam non ex et sem semper sodales eget quis leo. Cras consectetur metus eu enim vulputate mattis.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+        include ./layout/bloque_viajes
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canadá
+                        p.fecha 20 de Mayo - 28 de Mayo
+                        p.precio $2,500.00 USD
+    .tetimoniales
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
+        
